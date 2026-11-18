@@ -19,6 +19,9 @@ environ.Env.read_env(BASE_DIR / ".env")
 
 SECRET_KEY = env("SECRET_KEY")
 DEBUG = env.bool("DEBUG")
+LOGIN_URL = "login"
+LOGIN_REDIRECT_URL = "requests:list"
+LOGOUT_REDIRECT_URL = "core:home"
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
